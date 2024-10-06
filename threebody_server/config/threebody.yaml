@@ -1,0 +1,20 @@
+learning_rate: 0.001
+architecture: diverse
+dataset: threebody
+dim: 12
+m1: 1 # not important
+m2: 1 # not important
+m3: 1 # not important
+G: 1 # not important
+type: fig8
+epochs: 1000
+warmup: 0 
+batch-size: 32
+batch-time: 32
+timepoints: 128
+train: 30
+test: 3
+eval: 3
+phi_span:
+  - 0
+  - 1.0

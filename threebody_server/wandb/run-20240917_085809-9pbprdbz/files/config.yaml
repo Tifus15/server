@@ -1,0 +1,83 @@
+wandb_version: 1
+
+learning_rate:
+  desc: null
+  value: 0.001
+architecture:
+  desc: null
+  value: diverse
+dataset:
+  desc: null
+  value: threebody
+dim:
+  desc: null
+  value: 12
+m1:
+  desc: null
+  value: 1
+m2:
+  desc: null
+  value: 1
+m3:
+  desc: null
+  value: 1
+G:
+  desc: null
+  value: 1
+type:
+  desc: null
+  value: fig8
+epochs:
+  desc: null
+  value: 10
+warmup:
+  desc: null
+  value: 0
+batch-size:
+  desc: null
+  value: 32
+batch-time:
+  desc: null
+  value: 32
+timepoints:
+  desc: null
+  value: 128
+train:
+  desc: null
+  value: 30
+test:
+  desc: null
+  value: 3
+eval:
+  desc: null
+  value: 3
+phi_span:
+  desc: null
+  value:
+  - 0
+  - 1.0
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.19
+    cli_version: 0.17.8
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1726556289
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 2
+      - 16
+      - 23
+      4: 3.9.19
+      5: 0.17.8
+      8:
+      - 5
+      13: linux-x86_64

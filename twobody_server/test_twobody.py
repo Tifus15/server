@@ -16,7 +16,7 @@ def experiment(
     #######################################
     # MANDATORY
     seed: int = 41,
-    results_dir: str = 'logs_osci',
+    results_dir: str = 'logs_twobody',
 
     #######################################
     # OPTIONAL
@@ -28,14 +28,14 @@ def experiment(
     #######################################
     # MANDATORY
 
-    results_dir: str = 'res_osci'
+    results_dir: str = 'res_twobody'
 
     with open(config_file_path, 'r') as f:
         configs = yaml.load(f, yaml.Loader)
 
     print('Config file content:')
     print(configs)
-    wandb.init(config=configs,project="osci_benchmark")
+    wandb.init(config=configs,project="twobody_benchmark")
     twobody_loc(configs)
     wandb.finish()
     print("DONE")
