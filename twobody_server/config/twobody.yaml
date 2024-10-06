@@ -1,0 +1,18 @@
+learning_rate: 0.001
+architecture: diverse
+dataset: twobody
+dim: 8
+m1: 1
+m2: 3
+G: 1
+r1_span: 
+  - 1
+  - 5
+epochs: 1000
+warmup: 0
+batch-size: 32 #8
+batch-time: 32 #64
+train: 30
+test: 3
+eval: 3
+timepoints: 128

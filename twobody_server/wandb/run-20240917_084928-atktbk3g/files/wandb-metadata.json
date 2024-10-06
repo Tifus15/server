@@ -1,0 +1,122 @@
+{
+    "os": "Linux-6.8.0-40-generic-x86_64-with-glibc2.35",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-09-17T06:49:29.158068",
+    "startedAt": "2024-09-17T06:49:28.670680",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/denis/Desktop/twobody_server/twobody_local.py",
+    "codePathLocal": "twobody_local.py",
+    "codePath": "twobody_local.py",
+    "host": "denis-ROG-Strix-G713QM-G713QM",
+    "username": "denis",
+    "executable": "/home/denis/anaconda3/envs/test/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3146.2889374999995,
+        "min": 400.0,
+        "max": 4890.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3599.874,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 3812.701,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 3511.131,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4200.268,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4380.179,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4378.822,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4089.51,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4379.527,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4389.692,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4380.121,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 3536.762,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 3843.786,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4890.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 163.2414779663086,
+            "used": 151.48951721191406
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.043670654296875
+    }
+}

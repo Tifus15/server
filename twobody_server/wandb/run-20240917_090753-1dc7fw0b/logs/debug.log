@@ -1,0 +1,35 @@
+2024-09-17 09:07:53,088 INFO    MainThread:194675 [wandb_setup.py:_flush():77] Current SDK version is 0.17.8
+2024-09-17 09:07:53,088 INFO    MainThread:194675 [wandb_setup.py:_flush():77] Configure stats pid to 194675
+2024-09-17 09:07:53,088 INFO    MainThread:194675 [wandb_setup.py:_flush():77] Loading settings from /home/denis/.config/wandb/settings
+2024-09-17 09:07:53,088 INFO    MainThread:194675 [wandb_setup.py:_flush():77] Loading settings from /home/denis/Desktop/twobody_server/wandb/settings
+2024-09-17 09:07:53,088 INFO    MainThread:194675 [wandb_setup.py:_flush():77] Loading settings from environment variables: {}
+2024-09-17 09:07:53,088 INFO    MainThread:194675 [wandb_setup.py:_flush():77] Applying setup settings: {'_disable_service': False}
+2024-09-17 09:07:53,088 INFO    MainThread:194675 [wandb_setup.py:_flush():77] Inferring run settings from compute environment: {'program_relpath': 'twobody_local.py', 'program_abspath': '/home/denis/Desktop/twobody_server/twobody_local.py', 'program': '/home/denis/Desktop/twobody_server/twobody_local.py'}
+2024-09-17 09:07:53,088 INFO    MainThread:194675 [wandb_setup.py:_flush():77] Applying login settings: {}
+2024-09-17 09:07:53,088 INFO    MainThread:194675 [wandb_init.py:_log_setup():524] Logging user logs to /home/denis/Desktop/twobody_server/wandb/run-20240917_090753-1dc7fw0b/logs/debug.log
+2024-09-17 09:07:53,089 INFO    MainThread:194675 [wandb_init.py:_log_setup():525] Logging internal logs to /home/denis/Desktop/twobody_server/wandb/run-20240917_090753-1dc7fw0b/logs/debug-internal.log
+2024-09-17 09:07:53,089 INFO    MainThread:194675 [wandb_init.py:init():607] calling init triggers
+2024-09-17 09:07:53,089 INFO    MainThread:194675 [wandb_init.py:init():614] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'architecture': 'diverse', 'dataset': 'twobody', 'dim': 8, 'm1': 1, 'm2': 3, 'G': 1, 'r1_span': [1, 5], 'epochs': 1000, 'warmup': 0, 'batch-size': 32, 'batch-time': 32, 'train': 30, 'test': 3, 'eval': 3, 'timepoints': 128}
+2024-09-17 09:07:53,089 INFO    MainThread:194675 [wandb_init.py:init():657] starting backend
+2024-09-17 09:07:53,089 INFO    MainThread:194675 [wandb_init.py:init():661] setting up manager
+2024-09-17 09:07:53,090 INFO    MainThread:194675 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-09-17 09:07:53,091 INFO    MainThread:194675 [wandb_init.py:init():669] backend started and connected
+2024-09-17 09:07:53,094 INFO    MainThread:194675 [wandb_init.py:init():767] updated telemetry
+2024-09-17 09:07:53,094 INFO    MainThread:194675 [wandb_init.py:init():800] communicating run to backend with 90.0 second timeout
+2024-09-17 09:07:53,726 INFO    MainThread:194675 [wandb_init.py:init():851] starting run threads in backend
+2024-09-17 09:07:57,078 INFO    MainThread:194675 [wandb_run.py:_console_start():2463] atexit reg
+2024-09-17 09:07:57,078 INFO    MainThread:194675 [wandb_run.py:_redirect():2309] redirect: wrap_raw
+2024-09-17 09:07:57,079 INFO    MainThread:194675 [wandb_run.py:_redirect():2374] Wrapping output streams.
+2024-09-17 09:07:57,079 INFO    MainThread:194675 [wandb_run.py:_redirect():2399] Redirects installed.
+2024-09-17 09:07:57,080 INFO    MainThread:194675 [wandb_init.py:init():894] run started, returning control to user process
+2024-09-17 14:55:36,742 INFO    MainThread:194675 [wandb_run.py:_finish():2160] finishing run nobodyimportant/twobody_benchmark/1dc7fw0b
+2024-09-17 14:55:36,743 INFO    MainThread:194675 [wandb_run.py:_atexit_cleanup():2424] got exitcode: 0
+2024-09-17 14:55:36,743 INFO    MainThread:194675 [wandb_run.py:_restore():2406] restore
+2024-09-17 14:55:36,743 INFO    MainThread:194675 [wandb_run.py:_restore():2412] restore done
+2024-09-17 14:55:36,743 INFO    MainThread:194675 [wandb_run.py:_on_finish():2677] communicating current version
+2024-09-17 14:55:36,856 INFO    MainThread:194675 [wandb_run.py:_on_finish():2686] got version response upgrade_message: "wandb version 0.18.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-09-17 14:55:43,945 INFO    MainThread:194675 [wandb_run.py:_footer_history_summary_info():4078] rendering history
+2024-09-17 14:55:43,945 INFO    MainThread:194675 [wandb_run.py:_footer_history_summary_info():4110] rendering summary
+2024-09-17 14:55:43,948 INFO    MainThread:194675 [wandb_run.py:_footer_sync_info():4037] logging synced files

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/denis/Desktop/twobody_server/twobody_local.py", line 329, in <module>
+    twobody_loc(config)
+NameError: name 'config' is not defined
