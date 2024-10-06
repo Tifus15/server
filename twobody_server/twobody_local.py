@@ -32,7 +32,7 @@ import yaml
 
 ## MY EXPERIMENT
 
-def twobody_loc(config):
+def twobody_loc(configs):
     seed = 41
     out_str = f'Running experiment with seed {seed} and with device {device_util.DEVICE}'
     # MANDATORY
