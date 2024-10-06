@@ -2,7 +2,7 @@ import wandb
 import yaml
 
 from experiment_launcher import run_experiment, single_experiment_yaml
-from osci_local import *
+from threebody_local import *
 
 
 def experiment(
