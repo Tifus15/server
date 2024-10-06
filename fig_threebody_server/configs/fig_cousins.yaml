@@ -1,8 +1,8 @@
 save : False
 dt: 0.1
-samples: 3
+samples: 7
 alpha : 0.261799  # 15 deg
-cuda: True # server False
+cuda: False # server False
 
 monitoring: False
 
@@ -13,9 +13,9 @@ bias: False
 nodes: 3
 no_loops: True
 sob:
-  - 0.15 # H
+  - 1.0 #0.15 # H
   - 1.0 # q, p
-  - 0.5 # dq,dp
+  - 1.0 #0.5 # dq,dp
 
 layer: GAT
 size: 128
@@ -24,9 +24,9 @@ e_size: 16
 train_break: -1
 test_break: -1
 
-epochs: 100
+epochs: 300
 sim_type: dat_fig
 
-max_sim_time: 60000000 # 3 days
+max_sim_time: 172800 # 3 days
 
 wandb: False
