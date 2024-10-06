@@ -1,0 +1,187 @@
+2024-10-06 16:15:09,194 INFO    StreamThr :7377 [internal.py:wandb_internal():85] W&B internal server running at pid: 7377, started at: 2024-10-06 16:15:09.193952
+2024-10-06 16:15:09,195 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: status
+2024-10-06 16:15:09,197 INFO    WriterThread:7377 [datastore.py:open_for_write():87] open: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/run-gcy9a8mr.wandb
+2024-10-06 16:15:09,197 DEBUG   SenderThread:7377 [sender.py:send():391] send: header
+2024-10-06 16:15:09,211 DEBUG   SenderThread:7377 [sender.py:send():391] send: run
+2024-10-06 16:15:09,541 INFO    SenderThread:7377 [dir_watcher.py:__init__():211] watching files in: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files
+2024-10-06 16:15:09,541 INFO    SenderThread:7377 [sender.py:_start_run_threads():1200] run started: gcy9a8mr with start time 1728224109.193679
+2024-10-06 16:15:09,549 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: run_start
+2024-10-06 16:15:09,568 DEBUG   HandlerThread:7377 [system_info.py:__init__():26] System info init
+2024-10-06 16:15:09,568 DEBUG   HandlerThread:7377 [system_info.py:__init__():41] System info init done
+2024-10-06 16:15:09,568 INFO    HandlerThread:7377 [system_monitor.py:start():194] Starting system monitor
+2024-10-06 16:15:09,568 INFO    SystemMonitor:7377 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-10-06 16:15:09,568 INFO    HandlerThread:7377 [system_monitor.py:probe():214] Collecting system info
+2024-10-06 16:15:09,569 INFO    SystemMonitor:7377 [interfaces.py:start():188] Started cpu monitoring
+2024-10-06 16:15:09,570 INFO    SystemMonitor:7377 [interfaces.py:start():188] Started disk monitoring
+2024-10-06 16:15:09,570 INFO    SystemMonitor:7377 [interfaces.py:start():188] Started gpu monitoring
+2024-10-06 16:15:09,571 INFO    SystemMonitor:7377 [interfaces.py:start():188] Started memory monitoring
+2024-10-06 16:15:09,572 INFO    SystemMonitor:7377 [interfaces.py:start():188] Started network monitoring
+2024-10-06 16:15:09,577 DEBUG   HandlerThread:7377 [system_info.py:probe():152] Probing system
+2024-10-06 16:15:09,583 DEBUG   HandlerThread:7377 [system_info.py:_probe_git():137] Probing git
+2024-10-06 16:15:09,595 DEBUG   HandlerThread:7377 [system_info.py:_probe_git():145] Probing git done
+2024-10-06 16:15:09,595 DEBUG   HandlerThread:7377 [system_info.py:probe():200] Probing system done
+2024-10-06 16:15:09,595 DEBUG   HandlerThread:7377 [system_monitor.py:probe():223] {'os': 'Linux-6.8.0-45-generic-x86_64-with-glibc2.35', 'python': '3.9.19', 'heartbeatAt': '2024-10-06T14:15:09.577930', 'startedAt': '2024-10-06T14:15:09.190906', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/denis/Documents/GitHub/server/oscilator_server/osci_local.py', 'codePathLocal': 'osci_local.py', 'codePath': 'oscilator_server/osci_local.py', 'git': {'remote': 'https://github.com/Tifus15/server.git', 'commit': '4adb0825fa8f947396a285696e123910bcb872c7'}, 'email': 'andridenis@gmail.com', 'root': '/home/denis/Documents/GitHub/server', 'host': 'denis-ROG-Strix-G713QM-G713QM', 'username': 'denis', 'executable': '/home/denis/anaconda3/envs/test/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2161.233125, 'min': 400.0, 'max': 4890.0}, 'cpu_freq_per_core': [{'current': 3775.056, 'min': 400.0, 'max': 4890.0}, {'current': 2905.779, 'min': 400.0, 'max': 4890.0}, {'current': 4531.608, 'min': 400.0, 'max': 4890.0}, {'current': 400.0, 'min': 400.0, 'max': 4890.0}, {'current': 400.0, 'min': 400.0, 'max': 4890.0}, {'current': 400.0, 'min': 400.0, 'max': 4890.0}, {'current': 3623.994, 'min': 400.0, 'max': 4890.0}, {'current': 400.0, 'min': 400.0, 'max': 4890.0}, {'current': 3629.147, 'min': 400.0, 'max': 4890.0}, {'current': 400.0, 'min': 400.0, 'max': 4890.0}, {'current': 3620.097, 'min': 400.0, 'max': 4890.0}, {'current': 400.0, 'min': 400.0, 'max': 4890.0}, {'current': 400.0, 'min': 400.0, 'max': 4890.0}, {'current': 3627.544, 'min': 400.0, 'max': 4890.0}, {'current': 4537.032, 'min': 400.0, 'max': 4890.0}, {'current': 400.0, 'min': 400.0, 'max': 4890.0}], 'disk': {'/': {'total': 163.2414779663086, 'used': 152.12365341186523}}, 'gpu': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'memory_total': 6442450944}], 'memory': {'total': 15.043670654296875}}
+2024-10-06 16:15:09,595 INFO    HandlerThread:7377 [system_monitor.py:probe():224] Finished collecting system info
+2024-10-06 16:15:09,595 INFO    HandlerThread:7377 [system_monitor.py:probe():227] Publishing system info
+2024-10-06 16:15:09,595 DEBUG   HandlerThread:7377 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-10-06 16:15:10,543 INFO    Thread-12 :7377 [dir_watcher.py:_on_file_created():271] file/dir created: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/conda-environment.yaml
+2024-10-06 16:15:12,718 DEBUG   HandlerThread:7377 [system_info.py:_save_conda():224] Saving conda packages done
+2024-10-06 16:15:12,718 INFO    HandlerThread:7377 [system_monitor.py:probe():229] Finished publishing system info
+2024-10-06 16:15:12,720 DEBUG   SenderThread:7377 [sender.py:send():391] send: files
+2024-10-06 16:15:12,720 INFO    SenderThread:7377 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-10-06 16:15:12,757 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: python_packages
+2024-10-06 16:15:12,757 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: python_packages
+2024-10-06 16:15:12,758 DEBUG   SenderThread:7377 [sender.py:send():391] send: telemetry
+2024-10-06 16:15:12,799 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-06 16:15:12,799 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-06 16:15:12,800 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: stop_status
+2024-10-06 16:15:13,216 INFO    wandb-upload_0:7377 [upload_job.py:push():130] Uploaded file /tmp/tmp9femofgzwandb/kn8p49vl-wandb-metadata.json
+2024-10-06 16:15:13,542 INFO    Thread-12 :7377 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/conda-environment.yaml
+2024-10-06 16:15:13,543 INFO    Thread-12 :7377 [dir_watcher.py:_on_file_created():271] file/dir created: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/output.log
+2024-10-06 16:15:13,543 INFO    Thread-12 :7377 [dir_watcher.py:_on_file_created():271] file/dir created: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/wandb-metadata.json
+2024-10-06 16:15:13,543 INFO    Thread-12 :7377 [dir_watcher.py:_on_file_created():271] file/dir created: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/requirements.txt
+2024-10-06 16:15:13,821 DEBUG   SenderThread:7377 [sender.py:send():391] send: exit
+2024-10-06 16:15:13,821 INFO    SenderThread:7377 [sender.py:send_exit():598] handling exit code: 1
+2024-10-06 16:15:13,821 INFO    SenderThread:7377 [sender.py:send_exit():600] handling runtime: 4
+2024-10-06 16:15:13,822 INFO    SenderThread:7377 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-10-06 16:15:13,822 INFO    SenderThread:7377 [sender.py:send_exit():606] send defer
+2024-10-06 16:15:13,822 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:13,822 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 0
+2024-10-06 16:15:13,822 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:13,822 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-10-06 16:15:13,823 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 1
+2024-10-06 16:15:13,823 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:13,823 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 1
+2024-10-06 16:15:13,823 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:13,823 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-10-06 16:15:13,823 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 2
+2024-10-06 16:15:13,823 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:13,823 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 2
+2024-10-06 16:15:13,823 INFO    HandlerThread:7377 [system_monitor.py:finish():203] Stopping system monitor
+2024-10-06 16:15:13,823 DEBUG   SystemMonitor:7377 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-10-06 16:15:13,823 DEBUG   SystemMonitor:7377 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-10-06 16:15:13,823 DEBUG   SystemMonitor:7377 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-10-06 16:15:13,824 INFO    HandlerThread:7377 [interfaces.py:finish():200] Joined cpu monitor
+2024-10-06 16:15:13,824 INFO    HandlerThread:7377 [interfaces.py:finish():200] Joined disk monitor
+2024-10-06 16:15:13,865 INFO    HandlerThread:7377 [interfaces.py:finish():200] Joined gpu monitor
+2024-10-06 16:15:13,865 INFO    HandlerThread:7377 [interfaces.py:finish():200] Joined memory monitor
+2024-10-06 16:15:13,865 INFO    HandlerThread:7377 [interfaces.py:finish():200] Joined network monitor
+2024-10-06 16:15:13,866 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:13,866 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-10-06 16:15:13,866 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 3
+2024-10-06 16:15:13,866 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:13,866 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 3
+2024-10-06 16:15:13,866 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:13,866 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-10-06 16:15:13,866 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 4
+2024-10-06 16:15:13,867 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:13,867 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 4
+2024-10-06 16:15:13,867 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:13,867 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-10-06 16:15:13,867 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 5
+2024-10-06 16:15:13,868 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:13,868 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 5
+2024-10-06 16:15:13,868 DEBUG   SenderThread:7377 [sender.py:send():391] send: summary
+2024-10-06 16:15:13,868 INFO    SenderThread:7377 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-10-06 16:15:13,868 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:13,868 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-10-06 16:15:13,868 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 6
+2024-10-06 16:15:13,868 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:13,868 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 6
+2024-10-06 16:15:13,869 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:13,869 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-10-06 16:15:13,871 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: status_report
+2024-10-06 16:15:14,007 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 7
+2024-10-06 16:15:14,007 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:14,007 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 7
+2024-10-06 16:15:14,007 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:14,007 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-10-06 16:15:14,543 INFO    Thread-12 :7377 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/config.yaml
+2024-10-06 16:15:14,543 INFO    Thread-12 :7377 [dir_watcher.py:_on_file_created():271] file/dir created: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/wandb-summary.json
+2024-10-06 16:15:14,821 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-06 16:15:15,544 INFO    Thread-12 :7377 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/output.log
+2024-10-06 16:15:15,826 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 8
+2024-10-06 16:15:15,826 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: poll_exit
+2024-10-06 16:15:15,826 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:15,826 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 8
+2024-10-06 16:15:15,826 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:15,826 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-10-06 16:15:15,827 INFO    SenderThread:7377 [job_builder.py:build():443] Attempting to build job artifact
+2024-10-06 16:15:15,827 INFO    SenderThread:7377 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-10-06 16:15:15,844 INFO    SenderThread:7377 [job_builder.py:build():548] adding wandb-job metadata file
+2024-10-06 16:15:15,860 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 9
+2024-10-06 16:15:15,861 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:15,861 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 9
+2024-10-06 16:15:15,861 DEBUG   SenderThread:7377 [sender.py:send():391] send: artifact
+2024-10-06 16:15:16,545 INFO    Thread-12 :7377 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/output.log
+2024-10-06 16:15:16,774 INFO    wandb-upload_1:7377 [upload_job.py:push():85] Skipped uploading /home/denis/.local/share/wandb/artifacts/staging/tmps9cxwu9s
+2024-10-06 16:15:16,823 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-06 16:15:16,956 INFO    wandb-upload_0:7377 [upload_job.py:push():88] Uploaded file /tmp/tmpmuwtkmsw/wandb-job.json
+2024-10-06 16:15:17,906 INFO    SenderThread:7377 [sender.py:send_artifact():1549] sent artifact job-https___github.com_Tifus15_server.git_oscilator_server_osci_local.py - {'id': 'QXJ0aWZhY3Q6MTI2MzI0NTIyMA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ2Njc4MDIyNw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTI2MzI0NDk1MA==', 'versionIndex': 0}}}
+2024-10-06 16:15:17,906 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:17,906 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-10-06 16:15:17,907 INFO    SenderThread:7377 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-10-06 16:15:18,547 INFO    SenderThread:7377 [dir_watcher.py:finish():388] scan: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files
+2024-10-06 16:15:18,547 INFO    SenderThread:7377 [dir_watcher.py:finish():402] scan save: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/config.yaml config.yaml
+2024-10-06 16:15:18,547 INFO    SenderThread:7377 [dir_watcher.py:finish():402] scan save: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/conda-environment.yaml conda-environment.yaml
+2024-10-06 16:15:18,548 INFO    SenderThread:7377 [dir_watcher.py:finish():402] scan save: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/requirements.txt requirements.txt
+2024-10-06 16:15:18,548 INFO    SenderThread:7377 [dir_watcher.py:finish():402] scan save: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/wandb-metadata.json wandb-metadata.json
+2024-10-06 16:15:18,548 INFO    SenderThread:7377 [dir_watcher.py:finish():402] scan save: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/wandb-summary.json wandb-summary.json
+2024-10-06 16:15:18,548 INFO    SenderThread:7377 [dir_watcher.py:finish():402] scan save: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/output.log output.log
+2024-10-06 16:15:18,548 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 10
+2024-10-06 16:15:18,548 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: poll_exit
+2024-10-06 16:15:18,549 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:18,549 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 10
+2024-10-06 16:15:18,552 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:18,552 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-10-06 16:15:18,552 INFO    SenderThread:7377 [file_pusher.py:finish():169] shutting down file pusher
+2024-10-06 16:15:18,825 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-06 16:15:18,825 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: poll_exit
+2024-10-06 16:15:18,907 INFO    wandb-upload_1:7377 [upload_job.py:push():130] Uploaded file /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/config.yaml
+2024-10-06 16:15:18,926 INFO    wandb-upload_3:7377 [upload_job.py:push():130] Uploaded file /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/requirements.txt
+2024-10-06 16:15:18,930 INFO    wandb-upload_0:7377 [upload_job.py:push():130] Uploaded file /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/output.log
+2024-10-06 16:15:18,938 INFO    wandb-upload_4:7377 [upload_job.py:push():130] Uploaded file /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/wandb-summary.json
+2024-10-06 16:15:18,944 INFO    wandb-upload_2:7377 [upload_job.py:push():130] Uploaded file /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/files/conda-environment.yaml
+2024-10-06 16:15:19,144 INFO    Thread-11 :7377 [sender.py:transition_state():626] send defer: 11
+2024-10-06 16:15:19,144 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:19,144 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 11
+2024-10-06 16:15:19,144 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:19,144 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-10-06 16:15:19,145 INFO    SenderThread:7377 [file_pusher.py:join():175] waiting for file pusher
+2024-10-06 16:15:19,145 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 12
+2024-10-06 16:15:19,145 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:19,145 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 12
+2024-10-06 16:15:19,145 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:19,145 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-10-06 16:15:19,145 INFO    SenderThread:7377 [file_stream.py:finish():601] file stream finish called
+2024-10-06 16:15:19,279 INFO    SenderThread:7377 [file_stream.py:finish():605] file stream finish is done
+2024-10-06 16:15:19,279 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 13
+2024-10-06 16:15:19,279 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:19,280 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 13
+2024-10-06 16:15:19,280 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:19,280 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-10-06 16:15:19,280 INFO    SenderThread:7377 [sender.py:transition_state():626] send defer: 14
+2024-10-06 16:15:19,280 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: defer
+2024-10-06 16:15:19,280 INFO    HandlerThread:7377 [handler.py:handle_request_defer():184] handle defer: 14
+2024-10-06 16:15:19,280 DEBUG   SenderThread:7377 [sender.py:send():391] send: final
+2024-10-06 16:15:19,280 DEBUG   SenderThread:7377 [sender.py:send():391] send: footer
+2024-10-06 16:15:19,280 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: defer
+2024-10-06 16:15:19,280 INFO    SenderThread:7377 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-10-06 16:15:19,281 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-06 16:15:19,281 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: poll_exit
+2024-10-06 16:15:19,281 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: server_info
+2024-10-06 16:15:19,282 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-06 16:15:19,282 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: server_info
+2024-10-06 16:15:19,283 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: get_summary
+2024-10-06 16:15:19,283 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: sampled_history
+2024-10-06 16:15:19,284 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-06 16:15:19,411 DEBUG   SenderThread:7377 [sender.py:send_request():418] send_request: poll_exit
+2024-10-06 16:15:19,411 INFO    MainThread:7377 [wandb_run.py:_footer_history_summary_info():4078] rendering history
+2024-10-06 16:15:19,411 INFO    MainThread:7377 [wandb_run.py:_footer_history_summary_info():4110] rendering summary
+2024-10-06 16:15:19,411 INFO    MainThread:7377 [wandb_run.py:_footer_sync_info():4037] logging synced files
+2024-10-06 16:15:19,411 DEBUG   HandlerThread:7377 [handler.py:handle_request():158] handle_request: shutdown
+2024-10-06 16:15:19,411 INFO    HandlerThread:7377 [handler.py:finish():884] shutting down handler
+2024-10-06 16:15:20,282 INFO    WriterThread:7377 [datastore.py:close():296] close: /home/denis/Documents/GitHub/server/oscilator_server/wandb/run-20241006_161509-gcy9a8mr/run-gcy9a8mr.wandb
+2024-10-06 16:15:20,411 INFO    SenderThread:7377 [sender.py:finish():1631] shutting down sender
+2024-10-06 16:15:20,411 INFO    SenderThread:7377 [file_pusher.py:finish():169] shutting down file pusher
+2024-10-06 16:15:20,411 INFO    SenderThread:7377 [file_pusher.py:join():175] waiting for file pusher

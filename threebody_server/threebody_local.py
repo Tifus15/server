@@ -34,7 +34,7 @@ from samples import SAMPLES
 def threebody_loc(configs):
     seed= 41
     results_dir: str = 'res_threebody'
-
+    print(device_util.DEVICE)
 
 
     TRAIN =configs["train"]

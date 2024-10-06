@@ -31,11 +31,11 @@ import yaml
 ## MY EXPERIMENT
 def osci(configs):
     seed=41
-
+    print(device_util.DEVICE)
     TRAIN =configs["train"]
     TEST = configs["test"]
     EVAL = configs["eval"] 
-
+    #CUDA = configs["cuda"]
     NSAMPLES = TRAIN + TEST + EVAL
     dim = configs["dim"]
     BATCH_SIZE = configs["batch-size"]
@@ -61,7 +61,7 @@ def osci(configs):
         #visualize_dataset_traj_osci(dataset.cpu())
         trainset = dataset[:,0:TRAIN,:,:]
         testset = dataset[:,TRAIN:TRAIN+TEST,:,:].to(device_util.DEVICE)
-        eval = dataset[:,(TRAIN+TEST):,:,:].to(device_util.DEVICE)
+        eval = dataset[:,(TRAIN+TEST):,:,:]
         print("eval shape: {}".format(eval.shape))
 
         t = t.to(device_util.DEVICE)
@@ -96,6 +96,8 @@ def osci(configs):
     optiGRE = optim.AdamW(modelRNN.parameters(),lr=LR_RATE_RNN)
     optiRNE = optim.AdamW(modelRNE.parameters(),lr=LR_RATE_RNN_EULER)
 
+    
+        
 
 
 
@@ -148,7 +150,7 @@ def osci(configs):
             
             dim4_batch = make_batch_odeint(trainset,BATCH_SIZE,BATCH_TIME,coord)
             dim3_batch =torch.squeeze(dim4_batch).to(device_util.DEVICE)
-            
+           
             ode_pred = odeint(modelODE,dim4_batch[0,:,:,:],tb,method="rk4")
             mlp_pred = modelMLP(dim4_batch[:-1,:,:,:])
             gru_pred = modelGRU(dim3_batch[0,:,:].reshape(1,BATCH_SIZE,-1),tb)
@@ -288,14 +290,14 @@ def osci(configs):
             os.makedirs(results_dir)
 
         
-    torch.save(modelMLP,results_dir+"/MLPmodel.pt")    
-    torch.save(modelODE,results_dir+"/ODEmodel.pt")
-    torch.save(modelRNN,results_dir+"/RNNmodel.pt")
-    torch.save(modelGRU,results_dir+"/GRUmodel.pt")
-    torch.save(modelGRE,results_dir+"/GREmodel.pt")
-    torch.save(modelRNE,results_dir+"/RNEmodel.pt")
-    torch.save(loss_container,results_dir+"/losses.pt")
-    torch.save(eval,results_dir+"/eval.pt")
+    torch.save(modelMLP.cpu(),results_dir+"/MLPmodel.pt")    
+    torch.save(modelODE.cpu(),results_dir+"/ODEmodel.pt")
+    torch.save(modelRNN.cpu(),results_dir+"/RNNmodel.pt")
+    torch.save(modelGRU.cpu(),results_dir+"/GRUmodel.pt")
+    torch.save(modelGRE.cpu(),results_dir+"/GREmodel.pt")
+    torch.save(modelRNE.cpu(),results_dir+"/RNEmodel.pt")
+    torch.save(loss_container.cpu(),results_dir+"/losses.pt")
+    torch.save(eval.cpu(),results_dir+"/eval.pt")
     #torch.save(H_eval,results_dir+"/h_eval.pt") 
 
 

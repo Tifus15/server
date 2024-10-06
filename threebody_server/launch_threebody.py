@@ -2,7 +2,7 @@ from experiment_launcher import Launcher, is_local
 
 LOCAL = is_local()
 TEST = False
-USE_CUDA = False
+USE_CUDA = True
 
 N_SEEDS = 1
 
@@ -14,9 +14,9 @@ else:
 N_CORES = N_EXPS_IN_PARALLEL
 MEMORY_SINGLE_JOB = 500
 MEMORY_PER_CORE = N_EXPS_IN_PARALLEL * MEMORY_SINGLE_JOB // N_CORES
-PARTITION = 'amd2,amd'  # 'amd', 'rtx'
-GRES = 'gpu:v100:1' if USE_CUDA else None  # gpu:rtx2080:1, gpu:rtx3080:1
-CONDA_ENV = 'hnn'  # None
+PARTITION = gpu #'amd2,amd'  # 'amd', 'rtx'
+GRES = 'gpu:1' if USE_CUDA else None  # gpu:rtx2080:1, gpu:rtx3080:1
+CONDA_ENV = 'hnn2'  # None
 
 launcher = Launcher(
     exp_name='threebody_models_bench',

@@ -1,0 +1,12 @@
+cuda
+torch.Size([36, 1, 2])
+eval shape: torch.Size([128, 3, 1, 2])
+BATCHES pro epoch: 90
+  0%|                                                    | 0/90 [00:00<?, ?it/s]
+  0%|                                                    | 0/10 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/denis/Documents/GitHub/server/oscilator_server/osci_local.py", line 324, in <module>
+    osci(configs)
+  File "/home/denis/Documents/GitHub/server/oscilator_server/osci_local.py", line 153, in osci
+    if CUDA:
+NameError: name 'CUDA' is not defined

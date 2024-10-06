@@ -24,7 +24,7 @@ e_size: 16
 train_break: -1
 test_break: -1
 
-epochs: 300
+epochs: 1
 sim_type: dat_fig
 
 max_sim_time: 172800 # 3 days
