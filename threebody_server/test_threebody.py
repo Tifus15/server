@@ -36,7 +36,7 @@ def experiment(
     print('Config file content:')
     print(configs)
     wandb.init(config=configs,project="threebody_benchmark")
-    osci(configs)
+    threebody_loc(configs)
     wandb.finish()
     print("DONE")
 
