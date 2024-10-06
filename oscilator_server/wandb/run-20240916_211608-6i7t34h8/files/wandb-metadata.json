@@ -1,0 +1,122 @@
+{
+    "os": "Linux-6.8.0-40-generic-x86_64-with-glibc2.35",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-09-16T19:16:09.310748",
+    "startedAt": "2024-09-16T19:16:08.625289",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/denis/Desktop/oscilator_server/osci_local.py",
+    "codePathLocal": "osci_local.py",
+    "codePath": "osci_local.py",
+    "host": "denis-ROG-Strix-G713QM-G713QM",
+    "username": "denis",
+    "executable": "/home/denis/anaconda3/envs/test/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3515.6285624999996,
+        "min": 400.0,
+        "max": 4890.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4416.71,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4416.53,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 3560.84,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 3803.239,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4416.357,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4415.865,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 3540.259,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4415.976,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4416.071,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 3643.952,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 3937.761,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4416.68,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 4416.276,
+            "min": 400.0,
+            "max": 4890.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4890.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 163.2414779663086,
+            "used": 151.55055236816406
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.043670654296875
+    }
+}
