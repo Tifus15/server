@@ -35,7 +35,7 @@ def dataset_train(config):
     TIME = config["max_sim_time"]
     SOB = config["sob"]
     
-    data = create_dataset(config["sim_type"],alpha_max=config["alpha"],num_samples=SAMPLES,dt=config["dt"],save=config["save"])
+    data, evaluation = create_dataset(config["sim_type"],alpha_max=config["alpha"],num_samples=SAMPLES,dt=config["dt"],save=config["save"])
     
     
     if config["no_loops"]:
@@ -483,7 +483,8 @@ def dataset_train(config):
     torch.save(GHNN,config["sim_type"]+"_res/"+"GHNN.pt") 
     torch.save(HNN_model,config["sim_type"]+"_res/"+"HNN.pt")
     torch.save(GRUHNN,config["sim_type"]+"_res/"+"GRUGHNN.pt")   
-    torch.save(loss_container,config["sim_type"]+"_res/"+"losses.pt")  
+    torch.save(loss_container,config["sim_type"]+"_res/"+"losses.pt")
+    torch.save(evaluation,config["sim_type"]+"_res/"+"evaluation.pt")   
     
     
     
