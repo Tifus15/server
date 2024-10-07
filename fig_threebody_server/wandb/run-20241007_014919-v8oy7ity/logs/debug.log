@@ -1,0 +1,26 @@
+2024-10-07 01:49:19,188 INFO    MainThread:69468 [wandb_setup.py:_flush():77] Current SDK version is 0.18.1
+2024-10-07 01:49:19,189 INFO    MainThread:69468 [wandb_setup.py:_flush():77] Configure stats pid to 69468
+2024-10-07 01:49:19,189 INFO    MainThread:69468 [wandb_setup.py:_flush():77] Loading settings from /mnt/beegfs/home/le/.config/wandb/settings
+2024-10-07 01:49:19,190 INFO    MainThread:69468 [wandb_setup.py:_flush():77] Loading settings from /mnt/beegfs/home/le/da/server/fig_threebody_server/wandb/settings
+2024-10-07 01:49:19,190 INFO    MainThread:69468 [wandb_setup.py:_flush():77] Loading settings from environment variables: {}
+2024-10-07 01:49:19,191 INFO    MainThread:69468 [wandb_setup.py:_flush():77] Inferring run settings from compute environment: {'program_relpath': 'fig_threebody_server/main_fig.py', 'program_abspath': '/mnt/beegfs/home/le/da/server/fig_threebody_server/main_fig.py', 'program': '/mnt/beegfs/home/le/da/server/fig_threebody_server/main_fig.py'}
+2024-10-07 01:49:19,191 INFO    MainThread:69468 [wandb_setup.py:_flush():77] Applying login settings: {}
+2024-10-07 01:49:19,192 INFO    MainThread:69468 [wandb_setup.py:_flush():77] Applying login settings: {}
+2024-10-07 01:49:19,193 INFO    MainThread:69468 [wandb_init.py:_log_setup():532] Logging user logs to /mnt/beegfs/home/le/da/server/fig_threebody_server/wandb/run-20241007_014919-v8oy7ity/logs/debug.log
+2024-10-07 01:49:19,193 INFO    MainThread:69468 [wandb_init.py:_log_setup():533] Logging internal logs to /mnt/beegfs/home/le/da/server/fig_threebody_server/wandb/run-20241007_014919-v8oy7ity/logs/debug-internal.log
+2024-10-07 01:49:19,194 INFO    MainThread:69468 [wandb_init.py:init():616] calling init triggers
+2024-10-07 01:49:19,195 INFO    MainThread:69468 [wandb_init.py:init():623] wandb.init called with sweep_config: {}
+config: {'save': False, 'dt': 0.1, 'samples': 7, 'alpha': 0.261799, 'cuda': False, 'monitoring': False, 'sbatch': 32, 'tbatch': 32, 'lr': 0.001, 'bias': False, 'nodes': 3, 'no_loops': True, 'sob': [1.0, 1.0, 1.0], 'layer': 'GAT', 'size': 128, 'e_size': 16, 'train_break': -1, 'test_break': -1, 'epochs': 200, 'sim_type': 'dat_fig', 'max_sim_time': 172800, 'wandb': False}
+2024-10-07 01:49:19,195 INFO    MainThread:69468 [wandb_init.py:init():666] starting backend
+2024-10-07 01:49:19,196 INFO    MainThread:69468 [wandb_init.py:init():670] setting up manager
+2024-10-07 01:49:19,200 INFO    MainThread:69468 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-10-07 01:49:19,211 INFO    MainThread:69468 [wandb_init.py:init():678] backend started and connected
+2024-10-07 01:49:19,230 INFO    MainThread:69468 [wandb_init.py:init():773] updated telemetry
+2024-10-07 01:49:19,299 INFO    MainThread:69468 [wandb_init.py:init():806] communicating run to backend with 90.0 second timeout
+2024-10-07 01:49:19,560 INFO    MainThread:69468 [wandb_init.py:init():857] starting run threads in backend
+2024-10-07 01:49:19,889 INFO    MainThread:69468 [wandb_run.py:_console_start():2459] atexit reg
+2024-10-07 01:49:19,890 INFO    MainThread:69468 [wandb_run.py:_redirect():2307] redirect: wrap_raw
+2024-10-07 01:49:19,891 INFO    MainThread:69468 [wandb_run.py:_redirect():2372] Wrapping output streams.
+2024-10-07 01:49:19,892 INFO    MainThread:69468 [wandb_run.py:_redirect():2397] Redirects installed.
+2024-10-07 01:49:19,899 INFO    MainThread:69468 [wandb_init.py:init():900] run started, returning control to user process
+2024-10-07 01:52:32,461 WARNING MsgRouterThr:69468 [router.py:message_loop():77] message_loop has been closed

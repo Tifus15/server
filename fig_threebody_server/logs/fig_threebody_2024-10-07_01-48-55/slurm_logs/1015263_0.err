@@ -1,0 +1,83 @@
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: caiofreitas. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.1
+wandb: Run data is saved locally in /mnt/beegfs/home/le/da/server/fig_threebody_server/wandb/run-20241007_014919-v8oy7ity
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run stilted-vortex-11
+wandb: ⭐️ View project at https://wandb.ai/caiofreitas/fig_threebody
+wandb: 🚀 View run at https://wandb.ai/caiofreitas/fig_threebody/runs/v8oy7ity
+  0%|          | 0/6 [00:00<?, ?it/s]
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 14%|█▍        | 1/7 [00:00<00:02,  2.24it/s][A
+ 29%|██▊       | 2/7 [00:00<00:02,  2.44it/s][A
+ 43%|████▎     | 3/7 [00:01<00:01,  2.48it/s][A
+ 57%|█████▋    | 4/7 [00:01<00:01,  2.49it/s][A
+ 71%|███████▏  | 5/7 [00:02<00:00,  2.52it/s][A
+ 86%|████████▌ | 6/7 [00:02<00:00,  2.57it/s][A
+100%|██████████| 7/7 [00:02<00:00,  2.55it/s][A100%|██████████| 7/7 [00:02<00:00,  2.51it/s]
+ 17%|█▋        | 1/6 [00:02<00:14,  2.82s/it]
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 14%|█▍        | 1/7 [00:02<00:17,  2.87s/it][A
+ 29%|██▊       | 2/7 [00:05<00:14,  2.88s/it][A
+ 43%|████▎     | 3/7 [00:08<00:11,  2.88s/it][A
+ 57%|█████▋    | 4/7 [00:11<00:08,  2.87s/it][A
+ 71%|███████▏  | 5/7 [00:14<00:05,  2.88s/it][A
+ 86%|████████▌ | 6/7 [00:17<00:02,  2.89s/it][A
+100%|██████████| 7/7 [00:20<00:00,  2.88s/it][A100%|██████████| 7/7 [00:20<00:00,  2.88s/it]
+ 33%|███▎      | 2/6 [00:22<00:52, 13.03s/it]
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 14%|█▍        | 1/7 [00:04<00:27,  4.54s/it][A
+ 29%|██▊       | 2/7 [00:09<00:22,  4.51s/it][A
+ 43%|████▎     | 3/7 [00:13<00:17,  4.49s/it][A
+ 57%|█████▋    | 4/7 [00:18<00:13,  4.51s/it][A
+ 71%|███████▏  | 5/7 [00:22<00:09,  4.51s/it][A
+ 86%|████████▌ | 6/7 [00:27<00:04,  4.50s/it][A
+100%|██████████| 7/7 [00:31<00:00,  4.49s/it][A100%|██████████| 7/7 [00:31<00:00,  4.50s/it]
+ 50%|█████     | 3/6 [00:54<01:04, 21.48s/it]
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 14%|█▍        | 1/7 [00:06<00:36,  6.13s/it][A
+ 29%|██▊       | 2/7 [00:12<00:30,  6.16s/it][A
+ 43%|████▎     | 3/7 [00:18<00:24,  6.17s/it][A
+ 57%|█████▋    | 4/7 [00:24<00:18,  6.18s/it][A
+ 71%|███████▏  | 5/7 [00:30<00:12,  6.17s/it][A
+ 86%|████████▌ | 6/7 [00:37<00:06,  6.17s/it][A
+100%|██████████| 7/7 [00:43<00:00,  6.16s/it][A100%|██████████| 7/7 [00:43<00:00,  6.17s/it]
+ 67%|██████▋   | 4/6 [01:37<01:00, 30.04s/it]
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 14%|█▍        | 1/7 [00:06<00:40,  6.77s/it][A
+ 29%|██▊       | 2/7 [00:13<00:33,  6.79s/it][A
+ 43%|████▎     | 3/7 [00:20<00:27,  6.80s/it][A
+ 57%|█████▋    | 4/7 [00:27<00:20,  6.78s/it][A
+ 71%|███████▏  | 5/7 [00:33<00:13,  6.78s/it][A
+ 86%|████████▌ | 6/7 [00:40<00:06,  6.79s/it][A
+100%|██████████| 7/7 [00:47<00:00,  6.79s/it][A100%|██████████| 7/7 [00:47<00:00,  6.79s/it]
+ 83%|████████▎ | 5/6 [02:25<00:36, 36.34s/it]
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 14%|█▍        | 1/7 [00:06<00:40,  6.79s/it][A
+ 29%|██▊       | 2/7 [00:13<00:33,  6.75s/it][A
+ 43%|████▎     | 3/7 [00:20<00:27,  6.75s/it][A
+ 57%|█████▋    | 4/7 [00:27<00:20,  6.76s/it][A
+ 71%|███████▏  | 5/7 [00:33<00:13,  6.76s/it][A
+ 86%|████████▌ | 6/7 [00:40<00:06,  6.76s/it][A
+100%|██████████| 7/7 [00:47<00:00,  6.76s/it][A100%|██████████| 7/7 [00:47<00:00,  6.76s/it]
+100%|██████████| 6/6 [03:12<00:00, 40.07s/it]100%|██████████| 6/6 [03:12<00:00, 32.09s/it]
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/le/da/server/fig_threebody_server/main_fig.py", line 57, in <module>
+    run_experiment(experiment)
+  File "/mnt/beegfs/home/le/miniconda3/envs/hnn/lib/python3.9/site-packages/experiment_launcher/launcher.py", line 499, in run_experiment
+    func(**args)
+  File "/mnt/beegfs/home/le/miniconda3/envs/hnn/lib/python3.9/site-packages/experiment_launcher/decorators.py", line 37, in wrapper
+    exp_func(*args, **kwargs)
+  File "/mnt/beegfs/home/le/da/server/fig_threebody_server/main_fig.py", line 52, in experiment
+    dataset_train(configs)
+  File "/mnt/beegfs/home/le/da/server/fig_threebody_server/server_funcs.py", line 48, in dataset_train
+    g = dgl.graph((src,dst))
+  File "/mnt/beegfs/home/le/miniconda3/envs/hnn/lib/python3.9/site-packages/dgl/convert.py", line 163, in graph
+    (sparse_fmt, arrays), urange, vrange = utils.graphdata2tensors(data, idtype)
+  File "/mnt/beegfs/home/le/miniconda3/envs/hnn/lib/python3.9/site-packages/dgl/utils/data.py", line 191, in graphdata2tensors
+    data.format, tuple(F.tensor(a) for a in data.arrays)
+  File "/mnt/beegfs/home/le/miniconda3/envs/hnn/lib/python3.9/site-packages/dgl/utils/data.py", line 191, in <genexpr>
+    data.format, tuple(F.tensor(a) for a in data.arrays)
+  File "/mnt/beegfs/home/le/miniconda3/envs/hnn/lib/python3.9/site-packages/dgl/backend/pytorch/tensor.py", line 53, in tensor
+    return th.as_tensor(data, dtype=dtype)
+RuntimeError: Could not infer dtype of numpy.int64

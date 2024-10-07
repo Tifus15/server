@@ -1,0 +1,18 @@
+{"time":"2024-10-06T18:10:39.202103252+02:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-10-06T18:10:39.20268127+02:00","level":"INFO","msg":"created symlink","path":"/mnt/beegfs/home/le/da/server/threebody_server/wandb/run-20241006_181039-lpf9rf1c/logs/debug-core.log"}
+{"time":"2024-10-06T18:10:39.208685151+02:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-06T18:10:39.250699565+02:00","level":"INFO","msg":"created new stream","id":"lpf9rf1c"}
+{"time":"2024-10-06T18:10:39.251567684+02:00","level":"INFO","msg":"stream: started","id":"lpf9rf1c"}
+{"time":"2024-10-06T18:10:39.25171313+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"lpf9rf1c"}}
+{"time":"2024-10-06T18:10:39.251793343+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"lpf9rf1c"}}
+{"time":"2024-10-06T18:10:39.251801729+02:00","level":"INFO","msg":"sender: started","stream_id":{"value":"lpf9rf1c"}}
+{"time":"2024-10-06T18:10:39.534981392+02:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-06T18:10:39.538516095+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-06T23:50:51.964224989+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-06T23:50:51.96799638+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-06T23:50:54.86938595+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-10-06T23:50:56.230035872+02:00","level":"INFO","msg":"stream: closing","id":"lpf9rf1c"}
+{"time":"2024-10-06T23:50:56.230900363+02:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"lpf9rf1c"}}
+{"time":"2024-10-06T23:50:56.23103558+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"lpf9rf1c"}}
+{"time":"2024-10-06T23:50:56.231282489+02:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"lpf9rf1c"}}
+{"time":"2024-10-06T23:50:56.232730979+02:00","level":"INFO","msg":"stream: closed","id":"lpf9rf1c"}

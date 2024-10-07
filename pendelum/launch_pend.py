@@ -12,21 +12,21 @@ else:
     N_EXPS_IN_PARALLEL = 1
 
 N_CORES = N_EXPS_IN_PARALLEL
-MEMORY_SINGLE_JOB = 100000
+MEMORY_SINGLE_JOB = 1500
 MEMORY_PER_CORE = N_EXPS_IN_PARALLEL * MEMORY_SINGLE_JOB // N_CORES
 PARTITION = 'amd2,amd'  # 'amd', 'rtx'
 GRES = 'gpu:1' if USE_CUDA else None  # gpu:rtx2080:1, gpu:rtx3080:1
 CONDA_ENV = 'hnn'  # None
 
 launcher = Launcher(
-    exp_name='pendelum_master',
+    exp_name='pend43',
     exp_file='main',
     project_name='project02183',  # for hrz cluster
     n_seeds=N_SEEDS,
     n_exps_in_parallel=N_EXPS_IN_PARALLEL,
     n_cores=N_CORES,
     memory_per_core=MEMORY_PER_CORE,
-    days=1,
+    days=2,
     hours=6,
     minutes=0,
     seconds=0,

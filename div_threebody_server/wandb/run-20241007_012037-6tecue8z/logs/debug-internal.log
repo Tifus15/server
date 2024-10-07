@@ -1,0 +1,11 @@
+{"time":"2024-10-07T01:20:37.679667641+02:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-10-07T01:20:37.680674793+02:00","level":"INFO","msg":"created symlink","path":"/mnt/beegfs/home/le/da/server/div_threebody_server/wandb/run-20241007_012037-6tecue8z/logs/debug-core.log"}
+{"time":"2024-10-07T01:20:37.69017027+02:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-07T01:20:37.722590707+02:00","level":"INFO","msg":"created new stream","id":"6tecue8z"}
+{"time":"2024-10-07T01:20:37.723277941+02:00","level":"INFO","msg":"stream: started","id":"6tecue8z"}
+{"time":"2024-10-07T01:20:37.723580185+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"6tecue8z"}}
+{"time":"2024-10-07T01:20:37.723660187+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"6tecue8z"}}
+{"time":"2024-10-07T01:20:37.723668523+02:00","level":"INFO","msg":"sender: started","stream_id":{"value":"6tecue8z"}}
+{"time":"2024-10-07T01:20:38.071877583+02:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-07T01:20:38.075025319+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-07T01:20:43.103632563+02:00","level":"ERROR","msg":"monitor: gpu: timeout waiting for process to exit"}

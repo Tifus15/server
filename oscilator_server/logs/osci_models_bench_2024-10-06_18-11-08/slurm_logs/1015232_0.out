@@ -1,0 +1,9 @@
+Starting Job 1015232, Index 0
+Running scripts in parallel...
+########################################################################
+Config file content:
+{'learning_rate': 0.001, 'architecture': 'diverse', 'dataset': 'oscilator', 'dim': 2, 'k': 0.8, 'm': 1, 'epochs': 1000, 'warmup': 0, 'batch-size': 32, 'batch-time': 32, 'train': 30, 'test': 3, 'eval': 3, 'timepoints': 128, 'H_span': [5, 15], 'cuda': True}
+cuda
+torch.Size([36, 1, 2])
+eval shape: torch.Size([128, 3, 1, 2])
+BATCHES pro epoch: 90

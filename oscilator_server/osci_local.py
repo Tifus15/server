@@ -285,7 +285,7 @@ def osci(configs):
             wandb.log(metrics)
             
     
-
+    results_dir = "res_osci"
     if not os.path.exists(results_dir):
             os.makedirs(results_dir)
 

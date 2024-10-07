@@ -1,0 +1,19 @@
+{"time":"2024-10-06T18:13:02.974654524+02:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-10-06T18:13:02.975260694+02:00","level":"INFO","msg":"created symlink","path":"/mnt/beegfs/home/le/da/server/oscilator_server/wandb/run-20241006_181302-0ryibgun/logs/debug-core.log"}
+{"time":"2024-10-06T18:13:02.985742588+02:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-06T18:13:03.028735005+02:00","level":"INFO","msg":"created new stream","id":"0ryibgun"}
+{"time":"2024-10-06T18:13:03.029380859+02:00","level":"INFO","msg":"stream: started","id":"0ryibgun"}
+{"time":"2024-10-06T18:13:03.029531663+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"0ryibgun"}}
+{"time":"2024-10-06T18:13:03.029866603+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"0ryibgun"}}
+{"time":"2024-10-06T18:13:03.029876051+02:00","level":"INFO","msg":"sender: started","stream_id":{"value":"0ryibgun"}}
+{"time":"2024-10-06T18:13:03.331713787+02:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-06T18:13:03.334625493+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-06T19:51:58.168594193+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/caiofreitas/osci_benchmark/0ryibgun/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2024-10-06T23:58:07.90592645+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-06T23:58:07.911363986+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-06T23:58:09.450663152+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-10-06T23:58:10.824014182+02:00","level":"INFO","msg":"stream: closing","id":"0ryibgun"}
+{"time":"2024-10-06T23:58:10.824658403+02:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"0ryibgun"}}
+{"time":"2024-10-06T23:58:10.82483182+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"0ryibgun"}}
+{"time":"2024-10-06T23:58:10.825014844+02:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"0ryibgun"}}
+{"time":"2024-10-06T23:58:10.826707076+02:00","level":"INFO","msg":"stream: closed","id":"0ryibgun"}

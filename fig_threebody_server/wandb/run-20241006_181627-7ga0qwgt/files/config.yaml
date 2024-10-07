@@ -1,0 +1,73 @@
+_wandb:
+    value:
+        cli_version: 0.18.1
+        m: []
+        python_version: 3.9.19
+        t:
+            "1":
+                - 1
+                - 53
+                - 55
+                - 76
+            "2":
+                - 1
+                - 53
+                - 55
+                - 76
+            "3":
+                - 16
+                - 23
+                - 55
+            "4": 3.9.19
+            "5": 0.18.1
+            "8":
+                - 5
+            "12": 0.18.1
+            "13": linux-x86_64
+alpha:
+    value: 0.261799
+bias:
+    value: false
+cuda:
+    value: false
+dt:
+    value: 0.1
+e_size:
+    value: 16
+epochs:
+    value: 250
+layer:
+    value: GAT
+lr:
+    value: 0.001
+max_sim_time:
+    value: 172800
+monitoring:
+    value: false
+no_loops:
+    value: true
+nodes:
+    value: 3
+samples:
+    value: 7
+save:
+    value: false
+sbatch:
+    value: 32
+sim_type:
+    value: dat_fig
+size:
+    value: 128
+sob:
+    value:
+        - 1
+        - 1
+        - 1
+tbatch:
+    value: 32
+test_break:
+    value: -1
+train_break:
+    value: -1
+wandb:
+    value: false

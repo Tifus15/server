@@ -1,0 +1,18 @@
+{"time":"2024-10-06T18:11:01.229124197+02:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-10-06T18:11:01.229613356+02:00","level":"INFO","msg":"created symlink","path":"/mnt/beegfs/home/le/da/server/twobody_server/wandb/run-20241006_181101-o4mcsrbt/logs/debug-core.log"}
+{"time":"2024-10-06T18:11:01.236353565+02:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-06T18:11:01.273498653+02:00","level":"INFO","msg":"created new stream","id":"o4mcsrbt"}
+{"time":"2024-10-06T18:11:01.274064608+02:00","level":"INFO","msg":"stream: started","id":"o4mcsrbt"}
+{"time":"2024-10-06T18:11:01.274216997+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"o4mcsrbt"}}
+{"time":"2024-10-06T18:11:01.274272432+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"o4mcsrbt"}}
+{"time":"2024-10-06T18:11:01.274286249+02:00","level":"INFO","msg":"sender: started","stream_id":{"value":"o4mcsrbt"}}
+{"time":"2024-10-06T18:11:01.597586541+02:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-06T18:11:01.601706184+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-10-06T23:20:18.150807796+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-10-06T23:20:18.153741296+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-10-06T23:20:20.359212452+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-10-06T23:20:21.72845195+02:00","level":"INFO","msg":"stream: closing","id":"o4mcsrbt"}
+{"time":"2024-10-06T23:20:21.728993688+02:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"o4mcsrbt"}}
+{"time":"2024-10-06T23:20:21.729106743+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"o4mcsrbt"}}
+{"time":"2024-10-06T23:20:21.729301032+02:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"o4mcsrbt"}}
+{"time":"2024-10-06T23:20:21.731059591+02:00","level":"INFO","msg":"stream: closed","id":"o4mcsrbt"}

@@ -42,9 +42,10 @@ def experiment(
 
     ## MY EXPERIMENT
     
-
+    wandb.login()
     filename = os.path.join(results_dir, 'log_' + str(seed) + '.txt')
     out_str = f'Running experiment with seed {seed} and with device cpu'
+    wandb.init(config=configs,project="div_test")
     with open(filename, 'w') as file:
         file.write('Some logs in a log file.\n')
         file.write(out_str)

@@ -128,10 +128,7 @@ def dataset_train(config):
     print("max test batches: {}".format(N_test))
     begin = time()
     flag = 0
-    if WANDB:
-        wandb.watch(GHNN,log='all')
-        wandb.watch(HNN_model,log='all')
-        wandb.watch(GRUHNN,log='all')
+    
     for epoch in tqdm(range(EPOCHS)):
         if TIME < flag:
             break

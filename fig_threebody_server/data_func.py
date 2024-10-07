@@ -109,7 +109,7 @@ def data_load(name):
 
 def dst_list(nodes,start=0):
 
-    base = list(np.arange(start,start+nodes))
+    base = list(torch.arange(nodes))
     out=[]
     for i in range(nodes):
         out = out + base
@@ -118,7 +118,7 @@ def dst_list(nodes,start=0):
 def src_list(nodes,start=0):
     out=[]
     for i in range(nodes):
-        out = out +list(np.zeros((nodes),dtype=int)+start+i)
+        out = out +list(torch.zeros(nodes)+start+i)
     return out
 
 
@@ -171,6 +171,7 @@ def transform_dgl(src,dst,snaps,hs):
     return gs
 def get_d_dx_H(sample):
     #try:
+    #print(sample.idtype)
     gs = dgl.unbatch(sample)
     #except:
     #    gs=[sample]

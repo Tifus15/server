@@ -1,0 +1,21 @@
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: caiofreitas. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.1
+wandb: Run data is saved locally in /mnt/beegfs/home/le/da/server/fig_threebody_server/wandb/run-20241007_015344-hv04mlk9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run unique-fire-12
+wandb: ⭐️ View project at https://wandb.ai/caiofreitas/fig_threebody
+wandb: 🚀 View run at https://wandb.ai/caiofreitas/fig_threebody/runs/hv04mlk9
+  0%|          | 0/6 [00:00<?, ?it/s]
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 14%|█▍        | 1/7 [00:00<00:02,  2.31it/s][A
+ 29%|██▊       | 2/7 [00:00<00:02,  2.44it/s][A
+ 43%|████▎     | 3/7 [00:01<00:01,  2.50it/s][A
+ 57%|█████▋    | 4/7 [00:01<00:01,  2.50it/s][A
+ 71%|███████▏  | 5/7 [00:02<00:00,  2.53it/s][A
+ 86%|████████▌ | 6/7 [00:02<00:00,  2.54it/s][A
+100%|██████████| 7/7 [00:02<00:00,  2.51it/s][A100%|██████████| 7/7 [00:02<00:00,  2.50it/s]
+ 17%|█▋        | 1/6 [00:02<00:14,  2.84s/it]
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 14%|█▍        | 1/7 [00:02<00:17,  2.95s/it][A
+ 29%|██▊       | 2/7 [00:05<00:14,  2.89s/it][Aslurmstepd: error: *** JOB 1015264 ON gn02 CANCELLED AT 2024-10-07T01:53:56 ***

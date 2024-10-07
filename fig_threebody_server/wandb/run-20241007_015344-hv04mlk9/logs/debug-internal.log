@@ -1,0 +1,11 @@
+{"time":"2024-10-07T01:53:45.043469481+02:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-07T01:53:45.044359781+02:00","level":"INFO","msg":"created symlink","path":"/mnt/beegfs/home/le/da/server/fig_threebody_server/wandb/run-20241007_015344-hv04mlk9/logs/debug-core.log"}
+{"time":"2024-10-07T01:53:45.047632362+02:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2024-10-07T01:53:45.048074842+02:00","level":"INFO","msg":"created symlink","path":"/mnt/beegfs/home/le/da/server/fig_threebody_server/wandb/run-20241007_015344-hv04mlk9/logs/debug-core.log"}
+{"time":"2024-10-07T01:53:45.057138795+02:00","level":"INFO","msg":"created new stream","id":"hv04mlk9"}
+{"time":"2024-10-07T01:53:45.057702274+02:00","level":"INFO","msg":"stream: started","id":"hv04mlk9"}
+{"time":"2024-10-07T01:53:45.057859342+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"hv04mlk9"}}
+{"time":"2024-10-07T01:53:45.057937491+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"hv04mlk9"}}
+{"time":"2024-10-07T01:53:45.057948963+02:00","level":"INFO","msg":"sender: started","stream_id":{"value":"hv04mlk9"}}
+{"time":"2024-10-07T01:53:45.34806777+02:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-07T01:53:45.354298877+02:00","level":"INFO","msg":"Starting system monitor"}

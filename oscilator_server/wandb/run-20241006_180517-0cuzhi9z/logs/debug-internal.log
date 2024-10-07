@@ -1,0 +1,10 @@
+{"time":"2024-10-06T18:05:17.30495046+02:00","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2024-10-06T18:05:17.305524941+02:00","level":"INFO","msg":"created symlink","path":"/mnt/beegfs/home/le/da/server/oscilator_server/wandb/run-20241006_180517-0cuzhi9z/logs/debug-core.log"}
+{"time":"2024-10-06T18:05:17.313880156+02:00","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2024-10-06T18:05:17.36839523+02:00","level":"INFO","msg":"created new stream","id":"0cuzhi9z"}
+{"time":"2024-10-06T18:05:17.369269925+02:00","level":"INFO","msg":"stream: started","id":"0cuzhi9z"}
+{"time":"2024-10-06T18:05:17.369420087+02:00","level":"INFO","msg":"handler: started","stream_id":{"value":"0cuzhi9z"}}
+{"time":"2024-10-06T18:05:17.369464641+02:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"0cuzhi9z"}}
+{"time":"2024-10-06T18:05:17.369473258+02:00","level":"INFO","msg":"sender: started","stream_id":{"value":"0cuzhi9z"}}
+{"time":"2024-10-06T18:05:17.689709662+02:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-10-06T18:05:17.694824903+02:00","level":"INFO","msg":"Starting system monitor"}

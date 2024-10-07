@@ -1,0 +1,15 @@
+Starting Job 1015264, Index 0
+Running scripts in parallel...
+########################################################################
+DEBUG MODE: False
+Config file content:
+{'save': False, 'dt': 0.1, 'samples': 7, 'alpha': 0.261799, 'cuda': False, 'monitoring': False, 'sbatch': 32, 'tbatch': 32, 'lr': 0.001, 'bias': False, 'nodes': 3, 'no_loops': True, 'sob': [1.0, 1.0, 1.0], 'layer': 'GAT', 'size': 128, 'e_size': 16, 'train_break': -1, 'test_break': -1, 'epochs': 200, 'sim_type': 'dat_fig', 'max_sim_time': 172800, 'wandb': False}
+fig
+v1a
+torch.Size([62, 7, 3, 4])
+torch.Size([62, 7, 3, 4])
+torch.Size([62])
+torch.Size([62, 7, 1, 1])
+tensor(6.200000)
+tensor(0.101639)
+v7d

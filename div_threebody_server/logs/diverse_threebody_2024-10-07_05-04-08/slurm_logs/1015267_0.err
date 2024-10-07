@@ -1,0 +1,2 @@
+wandb: Using wandb-core as the SDK backend. Please refer to https://wandb.me/wandb-core for more information.
+slurmstepd: error: *** JOB 1015267 ON gn02 CANCELLED AT 2024-10-07T05:04:30 ***

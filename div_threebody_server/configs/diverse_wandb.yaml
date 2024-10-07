@@ -4,7 +4,7 @@ samples: 10
 alpha : 0.261799 # 15 deg
 cuda: False # server False
 
-monitoring: True
+monitoring: False
 
 sbatch: 32
 tbatch: 32
@@ -24,7 +24,7 @@ e_size: 16
 train_break: -1
 test_break: -1
 
-epochs: 250
+epochs: 200
 sim_type: dat_div
 
 max_sim_time: 259200 # 3 days

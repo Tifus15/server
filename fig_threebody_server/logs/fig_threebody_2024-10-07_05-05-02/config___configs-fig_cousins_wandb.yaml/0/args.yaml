@@ -1,0 +1,11 @@
+config_file_path: configs/fig_cousins_wandb.yaml
+debug: false
+git_hash: e4b7b2f3218d2d2e9ef8bdc07b59610f094c09fb
+git_url: https://github.com/Tifus15/server.git
+results_dir: ./logs/fig_threebody_2024-10-07_05-05-02/config___configs-fig_cousins_wandb.yaml/0
+seed: 0
+some_default_param: b
+wandb_enabled: true
+wandb_entity: andridenis
+wandb_group: test_group-figure-threebody
+wandb_project: fig_threebody

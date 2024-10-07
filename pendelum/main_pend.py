@@ -672,11 +672,15 @@ def train3dof(configs,dic_base):
     print(x.shape)
     print(dx.shape)
     """
+    """
     src = src_list(3)
     dst = dst_list(3)
+    """
+    src = [0,0,0,1,1,1,2,2,2]
+    dst = [0,1,2,0,1,2,0,1,2]
     if NOLOOPS:
         src,dst = del_loops(src,dst)
- 
+    
     graph = dgl.graph((src,dst))
     dim = 2
     #print(H[:,0,0])
