@@ -22,7 +22,7 @@ def new_full(configs):
     REG = configs["reg"] #["lasso","ridge","none"]
     ACT_FUNC = configs["acts"] # activations - don't touch this
     BIAS = configs["bias"]
-    WANDB = True
+    WANDB = configs["wandb"]
 
     MODEL_SIZE = configs["modelsize"]
     #DATASETSIZE = 512
@@ -330,6 +330,40 @@ def new_full(configs):
             container[31,epoch] += loss42_h_t.item() 
         container[0:16,epoch]/=N_train3    
         container[16:,epoch]/=N_test3
+        if WANDB:
+            metrics["train_sum1"]= container[0,epoch]
+            metrics["train_roll1"]= container[1,epoch]
+            metrics["train_vec1"]= container[2,epoch]
+            metrics["train_h1"]= container[3,epoch]
+            metrics["train_sum2"]= container[4,epoch]
+            metrics["train_roll2"]= container[5,epoch]
+            metrics["train_vec2"]= container[6,epoch]
+            metrics["train_h2"]= container[7,epoch]
+            metrics["train_sum3"]= container[8,epoch]
+            metrics["train_roll3"]= container[9,epoch]
+            metrics["train_vec3"]= container[10,epoch]
+            metrics["train_h3"]= container[11,epoch]
+            metrics["train_sum4"]= container[12,epoch]
+            metrics["train_roll4"]= container[13,epoch]
+            metrics["train_vec4"]= container[14,epoch]
+            metrics["train_h4"]= container[15,epoch]
+            metrics["test_sum1"]= container[16,epoch]
+            metrics["test_roll1"]= container[17,epoch]
+            metrics["test_vec1"]= container[18,epoch]
+            metrics["test_h1"]= container[19,epoch]
+            metrics["test_sum2"]= container[20,epoch]
+            metrics["test_roll2"]= container[21,epoch]
+            metrics["test_vec2"]= container[22,epoch]
+            metrics["test_h2"]= container[23,epoch]
+            metrics["test_sum3"]= container[24,epoch]
+            metrics["test_roll3"]= container[25,epoch]
+            metrics["test_vec3"]= container[26,epoch]
+            metrics["test_h3"]= container[27,epoch]
+            metrics["test_sum4"]= container[28,epoch]
+            metrics["test_roll4"]= container[29,epoch]
+            metrics["test_vec4"]= container[30,epoch]
+            metrics["test_h4"]= container[31,epoch]
+            wandb.log(metrics)
         print("GRUGHNN")
         print("train node3:")
         print("sum: {}  roll: {}  vec: {}  h:{}".format(container[0,epoch],
