@@ -115,7 +115,17 @@ def full_server(config):
 
 
 """
-
+def full_server4(configs,dic_base):
+    print("begin 4dof")
+    train4dof(configs,dic_base)
+    print("end 4dof")
+    
+def full_server3(configs,dic_base):
+    print("begin 3dof")
+    train3dof(configs,dic_base)
+    print("end 3dof")
+   
+   
 def full_server43(configs,dic_base):
     print("begin 4dof")
     train4dof(configs,dic_base)
