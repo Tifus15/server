@@ -73,35 +73,7 @@ def new_full(configs):
     trainset3,testset3,N_train3,N_test3 =make_train_test_loader(data3,SPLIT,BATCH_SIZE,TIME_SIZE,3,src3,dst3)
     trainset4,testset4,N_train4,N_test4 =make_train_test_loader(data4,SPLIT,BATCH_SIZE,TIME_SIZE,4,src4,dst4)
 
-    """
-    x_temp = data3[:,:,:,:-1]
-    H_temp = data3[:,:,:,-1]
-    xs,hs = make_snapshots(x_temp.float(),H_temp.float().unsqueeze(-1),TIME_SIZE)
-    print(xs[0].shape)
-    border = int(SPLIT*len(xs))
-    c = list(zip(xs, hs))
-    random.shuffle(c)
-    xs, hs = zip(*c)
-    train = xs[0:border]
-    test = xs[border:]
-
-    h_train = hs[0:border]
-    h_test = hs[border:]
-    train_snapshots = create_pend3dof_graph_snapshots(train,h_train,src,dst)
-    test_snapshots = create_pend3dof_graph_snapshots(test,h_test,src,dst)
-    trainset = GraphDataLoader(train_snapshots,batch_size=BATCH_SIZE,drop_last=True,shuffle=True)
-    it = iter(trainset)
-    g = next(it)
-    #model.change_graph(g)
-    N_train=len(trainset)
-    print("TRAIN BATCHES : {}".format(N_train))
-    testset = GraphDataLoader(test_snapshots,batch_size=BATCH_SIZE,drop_last=True,shuffle=True)
-    it = iter(testset)
-    gt = next(it)
     
-    N_test=len(testset)
-    print("TEST BATCHES : {}".format(N_test))
-    """
     del data3, data4
     
     ts = t[0:TIME_SIZE]
@@ -275,18 +247,18 @@ def new_full(configs):
             loss32_test=0
             loss41_test=0
             loss42_test=0
-            loss31_roll=0
-            loss32_roll=0
-            loss41_roll=0
-            loss42_roll=0
-            loss31_vec=0
-            loss32_vec=0
-            loss41_vec=0
-            loss42_vec=0
-            loss31_h=0
-            loss32_h=0
-            loss41_h=0
-            loss42_h=0
+            loss31_roll_t=0
+            loss32_roll_t=0
+            loss41_roll_t=0
+            loss42_roll_t=0
+            loss31_vec_t=0
+            loss32_vec_t=0
+            loss41_vec_t=0
+            loss42_vec_t=0
+            loss31_h_t=0
+            loss32_h_t=0
+            loss41_h_t=0
+            loss42_h_t=0
             
             
             test_sample3 = next(itt3)
@@ -315,12 +287,12 @@ def new_full(configs):
             #h_pred = model(x_tr_flat)
             #print(h_pred.shape)
             #print(h_tr.reshape(-1,1).shape)
-            loss31_h = lossfn(h_pred31.flatten(),h_tr3.flatten())
-            loss41_h = lossfn(h_pred41.flatten(),h_tr4.flatten())
-            loss31_vec = lossfn(dx_pred31[:,:,0],dx_tr3[:,:,0])+lossfn(dx_pred31[:,:,1],dx_tr3[:,:,1])
-            loss41_vec = lossfn(dx_pred41[:,:,0],dx_tr4[:,:,0])+lossfn(dx_pred41[:,:,1],dx_tr4[:,:,1])
-            loss31_roll = lossfn(x_pred31[:,:,0],x_tr3[:,:,0])+lossfn(x_pred31[:,:,1],x_tr3[:,:,1])
-            loss41_roll = lossfn(x_pred41[:,:,0],x_tr4[:,:,0])+lossfn(x_pred41[:,:,1],x_tr4[:,:,1])
+            loss31_h_t = lossfn(h_pred31.flatten(),h_tr3.flatten())
+            loss41_h_t = lossfn(h_pred41.flatten(),h_tr4.flatten())
+            loss31_vec_t = lossfn(dx_pred31[:,:,0],dx_tr3[:,:,0])+lossfn(dx_pred31[:,:,1],dx_tr3[:,:,1])
+            loss41_vec_t = lossfn(dx_pred41[:,:,0],dx_tr4[:,:,0])+lossfn(dx_pred41[:,:,1],dx_tr4[:,:,1])
+            loss31_roll_t = lossfn(x_pred31[:,:,0],x_tr3[:,:,0])+lossfn(x_pred31[:,:,1],x_tr3[:,:,1])
+            loss41_roll_t = lossfn(x_pred41[:,:,0],x_tr4[:,:,0])+lossfn(x_pred41[:,:,1],x_tr4[:,:,1])
             
             
             model32.change_graph(test_sample3)
@@ -328,12 +300,12 @@ def new_full(configs):
             x_pred32,dx_pred32,h_pred32 = RKroll_for_learning(model32,x03,ts)
             x_pred42,dx_pred42,h_pred42 = RKroll_for_learning(model42,x04,ts)
             
-            loss32_h = lossfn(h_pred32.flatten(),h_tr3.flatten())
-            loss42_h = lossfn(h_pred42.flatten(),h_tr4.flatten())
-            loss32_vec = lossfn(dx_pred32[:,:,0],dx_tr3[:,:,0])+lossfn(dx_pred32[:,:,1],dx_tr3[:,:,1])
-            loss42_vec = lossfn(dx_pred42[:,:,0],dx_tr4[:,:,0])+lossfn(dx_pred42[:,:,1],dx_tr4[:,:,1])
-            loss32_roll = lossfn(x_pred32[:,:,0],x_tr3[:,:,0])+lossfn(x_pred32[:,:,1],x_tr3[:,:,1])
-            loss42_roll = lossfn(x_pred42[:,:,0],x_tr4[:,:,0])+lossfn(x_pred42[:,:,1],x_tr4[:,:,1])
+            loss32_h_t = lossfn(h_pred32.flatten(),h_tr3.flatten())
+            loss42_h_t = lossfn(h_pred42.flatten(),h_tr4.flatten())
+            loss32_vec_t = lossfn(dx_pred32[:,:,0],dx_tr3[:,:,0])+lossfn(dx_pred32[:,:,1],dx_tr3[:,:,1])
+            loss42_vec_t = lossfn(dx_pred42[:,:,0],dx_tr4[:,:,0])+lossfn(dx_pred42[:,:,1],dx_tr4[:,:,1])
+            loss32_roll_t = lossfn(x_pred32[:,:,0],x_tr3[:,:,0])+lossfn(x_pred32[:,:,1],x_tr3[:,:,1])
+            loss42_roll_t = lossfn(x_pred42[:,:,0],x_tr4[:,:,0])+lossfn(x_pred42[:,:,1],x_tr4[:,:,1])
             
             loss31_test = (s_alpha[0]*loss31_roll + s_alpha[1]*loss31_vec + s_alpha[2]*loss31_h)
             loss32_test = (s_alpha[0]*loss32_roll + s_alpha[1]*loss32_vec + s_alpha[2]*loss32_h)
@@ -341,21 +313,21 @@ def new_full(configs):
             loss42_test = (s_alpha[0]*loss42_roll + s_alpha[1]*loss42_vec + s_alpha[2]*loss42_h)
             
             container[16,epoch] += loss31_test.item()
-            container[17,epoch] += loss31_roll.item()
-            container[18,epoch] += loss31_vec.item()
-            container[19,epoch] += loss31_h.item()
+            container[17,epoch] += loss31_roll_t.item()
+            container[18,epoch] += loss31_vec_t.item()
+            container[19,epoch] += loss31_h_t.item()
             container[20,epoch] += loss41_test.item()
-            container[21,epoch] += loss41_roll.item()
-            container[22,epoch] += loss41_vec.item()
-            container[23,epoch] += loss41_h.item()
+            container[21,epoch] += loss41_roll_t.item()
+            container[22,epoch] += loss41_vec_t.item()
+            container[23,epoch] += loss41_h_t.item()
             container[24,epoch] += loss32_test.item()
-            container[25,epoch] += loss32_roll.item()
-            container[26,epoch] += loss32_vec.item()
-            container[27,epoch] += loss32_h.item()
+            container[25,epoch] += loss32_roll_t.item()
+            container[26,epoch] += loss32_vec_t.item()
+            container[27,epoch] += loss32_h_t.item()
             container[28,epoch] += loss42_test.item()
-            container[29,epoch] += loss42_roll.item()
-            container[30,epoch] += loss42_vec.item()
-            container[31,epoch] += loss42_h.item() 
+            container[29,epoch] += loss42_roll_t.item()
+            container[30,epoch] += loss42_vec_t.item()
+            container[31,epoch] += loss42_h_t.item() 
         container[0:16,epoch]/=N_train3    
         container[16:,epoch]/=N_test3
         print("GRUGHNN")
